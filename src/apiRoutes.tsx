@@ -1,0 +1,10 @@
+export const host = 'https://jelan.pythonanywhere.com';
+export const registerRoute = `${host}/api/user/signup`; 
+export const loginRoute = `${host}/api/user/login`;
+export const completedRoute = `${host}/api/todo?flag=completed`;
+export const createRoute = `${host}/api/todo/`;
+export const notCompletedRoute = `${host}/api/todo?flag=pending`;
+export const expiredRoute = `${host}/api/todo?flag=expired`;
+export const deletetask = `${host}/api/todo/`;
+export const marktask = `${host}/api/todo/markall`;
+export const logouttask = `${host}/api/user/logout`;
