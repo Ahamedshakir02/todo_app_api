@@ -3,15 +3,9 @@ import './App.css';
 import Login from './Login';
 import Signup from './signup';
 import {
-  registerRoute,
-  loginRoute,
   completedRoute,
   createRoute,
-  notCompletedRoute,
-  expiredRoute,
   deletetask,
-  marktask,
-  logouttask,
 } from './apiRoutes';
 
 type Todo = {

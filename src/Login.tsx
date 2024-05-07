@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { loginRoute } from './apiRoutes'; // Import the API route constant
 
-type User = {
-  username: string;
-  password: string;
-};
 
 const Login = ({ onLogin }: { onLogin: () => void }) => {
   const [username, setUsername] = useState('');
@@ -35,7 +31,7 @@ const Login = ({ onLogin }: { onLogin: () => void }) => {
           setError('Invalid username or password.');
         }
       })
-      .catch((error) => {
+      .catch((_error) => {
         setError('Failed to login. Please try again.');
       });
   };

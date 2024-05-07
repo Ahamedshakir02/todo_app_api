@@ -37,7 +37,7 @@ const Signup = ({ onSignup }: { onSignup: (user: User) => void }) => {
           setError('Failed to create user. Please try again.');
         }
       })
-      .catch((error) => {
+      .catch((_error) => {
         setError('Failed to create user. Please try again.');
       });
   };
